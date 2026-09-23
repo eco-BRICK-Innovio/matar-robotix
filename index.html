@@ -123,13 +123,16 @@
 <section class="section contact" id="contact">
  <div class="container contact-grid">
   <div><span class="eyebrow">בואו נדבר</span><h2>רוצים להפעיל תוכנית טכנולוגית?</h2><p>ספרו לנו על המסגרת, גילאי המשתתפים והתחום שמעניין אתכם. נוכל לחזור עם כיוון מתאים.</p><div class="contact-direct"><a href="mailto:office@matar-robotix.co.il">office@matar-robotix.co.il</a></div></div>
-  <form id="contactForm" class="contact-form">
-   <label>שם מלא<input name="name" required></label>
-   <label>טלפון<input name="phone" inputmode="tel" required></label>
-   <label>אימייל<input name="email" type="email"></label>
+  <form id="contactForm" class="contact-form" action="https://formspree.io/f/xoevwjao" method="POST">
+   <input type="hidden" name="_subject" value="פנייה חדשה מאתר מטר רובוטיקס">
+   <label>שם מלא<input name="name" required autocomplete="name"></label>
+   <label>טלפון<input name="phone" inputmode="tel" required autocomplete="tel"></label>
+   <label>אימייל<input name="email" type="email" autocomplete="email"></label>
    <label>מה מעניין אתכם?<select name="interest"><option>רובוטיקה</option><option>תלת־ממד</option><option>מדעים ופיסיקה</option><option>רחפנים</option><option>פיזיקה לבגרות</option><option>תוכנית לבית ספר / מתנ״ס</option><option>אחר</option></select></label>
    <label>הודעה<textarea name="message" rows="4"></textarea></label>
-   <button class="btn primary" type="submit">שליחת פנייה</button><small>הטופס פותח הודעת אימייל מוכנה לשליחה ואינו שומר מידע באתר.</small>
+   <button class="btn primary" type="submit">שליחת פנייה</button>
+   <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+   <small>הפרטים נשלחים ישירות אלינו דרך טופס מאובטח, ללא פתיחת אפליקציית דואר.</small>
   </form>
  </div>
 </section>
