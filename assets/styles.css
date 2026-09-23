@@ -45,3 +45,10 @@ body { text-align: right; }
 .video-copy p{color:var(--muted);margin:0}
 @media(max-width:900px){.video-grid{grid-template-columns:1fr 1fr}.video-card:last-child{grid-column:1/-1;max-width:560px;width:100%;margin-inline:auto}}
 @media(max-width:600px){.video-grid{grid-template-columns:1fr}.video-card:last-child{grid-column:auto;max-width:none}.video-card video{aspect-ratio:16/9}}
+
+/* v11 — direct Formspree contact submission */
+.form-status{grid-column:1/-1;min-height:1.5em;font-weight:800;font-size:15px}
+.form-status.sending{color:var(--blue)}
+.form-status.success{color:#16794b;background:#ecf9f2;border:1px solid #bfe8d2;border-radius:11px;padding:10px 12px}
+.form-status.error{color:#a12622;background:#fff2f1;border:1px solid #f1c6c3;border-radius:11px;padding:10px 12px}
+.contact-form .btn:disabled{opacity:.65;cursor:wait;transform:none}
